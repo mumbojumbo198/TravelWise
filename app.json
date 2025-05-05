@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "scheme": "travelwise",
+    "plugins": [
+      "expo-router"
+    ],
+    "name": "TravelWise",
+    "slug": "travelwise",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#4a148c"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.travelwise.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "TravelWise needs your location to show nearby destinations",
+        "NSLocationAlwaysUsageDescription": "TravelWise needs your location to show nearby destinations"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#4a148c"
+      },
+      "package": "com.travelwise.app",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "experiments": {
+      "typedRoutes": true,
+      "newArchEnabled": true
+    }
+  }
+}
